@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Brown Bouncies - Premier Party Rental Service in Sun City Center, FL</title>
+    <meta name="description" content="Modern Brown Bouncies offers premium bounce house rentals and party equipment in Sun City Center, FL. Clean, safe, and guaranteed to make your celebration extraordinary! First-time rentals get 10% off.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS -->
+    <style>
+        :root {
+            --brown-primary: hsl(0, 0%, 0%);
+            --brown-secondary: hsl(0, 0%, 20%);
+            --brown-light: hsl(0, 0%, 80%);
+            --brown-lighter: hsl(340, 50%, 95%);
+            --orange-accent: hsl(340, 80%, 85%);
+            --teal-accent: hsl(340, 60%, 80%);
+            --pink-accent: hsl(340, 80%, 85%);
+            --pink-light: hsl(340, 50%, 95%);
+        }
+        
+        .text-brown-primary { color: var(--brown-primary); }
+        .text-brown-secondary { color: var(--brown-secondary); }
+        .bg-brown-lighter { background-color: var(--brown-lighter); }
+        .bg-pink-accent { background-color: var(--pink-accent); }
+        .bg-pink-light { background-color: var(--pink-light); }
+        .bg-teal-accent { background-color: var(--teal-accent); }
+        .border-pink-accent { border-color: var(--pink-accent); }
+        
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+        
+        .smooth-scroll {
+            scroll-behavior: smooth;
+        }
+        
+        /* Custom hover colors */
+        .hover-pink-600:hover { color: rgb(219, 39, 119); }
+        .hover-pink-500:hover { background-color: rgb(236, 72, 153); }
+        .hover-border-pink-500:hover { border-color: rgb(236, 72, 153); }
+    </style>
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brown-primary': 'var(--brown-primary)',
+                        'brown-secondary': 'var(--brown-secondary)',
+                        'brown-light': 'var(--brown-light)',
+                        'brown-lighter': 'var(--brown-lighter)',
+                        'orange-accent': 'var(--orange-accent)',
+                        'teal-accent': 'var(--teal-accent)',
+                        'pink-accent': 'var(--pink-accent)',
+                        'pink-light': 'var(--pink-light)'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body class="font-sans antialiased bg-gray-50 text-gray-800 smooth-scroll">
+    
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <h1 class="text-2xl font-bold text-brown-primary">Modern Brown Bouncies</h1>
+                </div>
+                
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <button onclick="scrollToSection('home')" class="text-gray-700 hover-pink-600 transition duration-300">Home</button>
+                        <button onclick="scrollToSection('about')" class="text-gray-700 hover-pink-600 transition duration-300">About</button>
+                        <button onclick="scrollToSection('bounce-houses')" class="text-gray-700 hover-pink-600 transition duration-300">Bounce Houses</button>
+                        <button onclick="scrollToSection('services')" class="text-gray-700 hover-pink-600 transition duration-300">Services</button>
+                        <button onclick="scrollToSection('reviews')" class="text-gray-700 hover-pink-600 transition duration-300">Reviews</button>
+                        <button onclick="scrollToSection('contact')" class="text-gray-700 hover-pink-600 transition duration-300">Contact</button>
+                    </div>
+                </div>
+                
+                <div class="md:hidden">
+                    <button class="text-gray-700" onclick="toggleMobileMenu()" id="mobile-menu-btn">
+                        <i data-lucide="menu" class="h-6 w-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden bg-white border-t hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <button onclick="scrollToSection('home')" class="block px-3 py-2 text-gray-700 hover:text-brown-primary w-full text-left">Home</button>
+                <button onclick="scrollToSection('about')" class="block px-3 py-2 text-gray-700 hover:text-brown-primary w-full text-left">About</button>
+                <button onclick="scrollToSection('bounce-houses')" class="block px-3 py-2 text-gray-700 hover:text-brown-primary w-full text-left">Bounce Houses</button>
+                <button onclick="scrollToSection('services')" class="block px-3 py-2 text-gray-700 hover:text-brown-primary w-full text-left">Services</button>
+                <button onclick="scrollToSection('reviews')" class="block px-3 py-2 text-gray-700 hover:text-brown-primary w-full text-left">Reviews</button>
+                <button onclick="scrollToSection('contact')" class="block px-3 py-2 text-gray-700 hover:text-brown-primary w-full text-left">Contact</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-16 min-h-screen bg-gradient-to-br from-brown-lighter to-white flex items-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <div class="space-y-4">
+                        <h1 class="text-4xl lg:text-6xl font-bold text-brown-primary leading-tight">
+                            Modern Brown Bouncies
+                        </h1>
+                        <p class="text-xl lg:text-2xl text-gray-600 font-medium">
+                            Premier Party Rental Service in Sun City Center, FL
+                        </p>
+                    </div>
+                    
+                    <div class="bg-pink-accent text-black px-6 py-3 rounded-full inline-block font-semibold text-lg shadow-lg border-2 border-pink-accent">
+                        <i data-lucide="gift" class="inline mr-2 h-5 w-5"></i>
+                        10% Discount for First Time Rentals!
+                    </div>
+                    
+                    <div class="flex items-center space-x-6">
+                        <div class="flex items-center text-yellow-500">
+                            <i data-lucide="star" class="h-8 w-8 fill-current"></i>
+                            <span class="text-3xl font-bold text-brown-primary ml-2">5.0</span>
+                            <span class="text-gray-600 ml-2">(11 reviews)</span>
+                        </div>
+                    </div>
+                    
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Delivering unforgettable experiences through our themed bounce houses and party equipment. 
+                        Clean, safe, and guaranteed to make your celebration extraordinary!
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button onclick="scrollToSection('contact')" class="bg-black hover-pink-500 text-white px-8 py-4 rounded-xl font-semibold text-lg transition duration-300 shadow-lg text-center border-2 border-black hover-border-pink-500">
+                            Book Your Party
+                        </button>
+                        <a href="tel:+19545591002" class="border-2 border-black text-black hover-pink-500 hover:text-white hover-border-pink-500 px-8 py-4 rounded-xl font-semibold text-lg transition duration-300 text-center">
+                            <i data-lucide="phone" class="inline mr-2 h-5 w-5"></i>
+                            Call Now
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600&q=80" 
+                         alt="Colorful inflatable bounce house castle with children playing" 
+                         class="rounded-2xl shadow-2xl w-full h-auto">
+                    <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-brown-primary">Clean</div>
+                            <div class="text-gray-600">& Safe</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl lg:text-5xl font-bold text-brown-primary mb-6">
+                    About Modern Brown Bouncies
+                </h2>
+                <div class="w-24 h-1 bg-pink-accent mx-auto mb-8"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Your premier party rental company in Sun City Center, delivering unforgettable experiences through our themed bounce houses and quality party equipment.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-bold text-brown-primary">Why Choose Us?</h3>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-pink-accent text-black rounded-full p-3 flex-shrink-0">
+                                <i data-lucide="shield" class="h-6 w-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg text-brown-primary">Clean & Safe Equipment</h4>
+                                <p class="text-gray-600">All bounce houses are thoroughly cleaned and sanitized after every use, ensuring a safe and hygienic environment for your children.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-gray-400 text-black rounded-full p-3 flex-shrink-0">
+                                <i data-lucide="clock" class="h-6 w-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg text-brown-primary">Reliable Service</h4>
+                                <p class="text-gray-600">Professional setup and pickup service with flexible scheduling to accommodate your party timeline.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-teal-accent text-black rounded-full p-3 flex-shrink-0">
+                                <i data-lucide="heart" class="h-6 w-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg text-brown-primary">Exceptional Service</h4>
+                                <p class="text-gray-600">Dedicated to making your celebration perfect with personalized attention and competitive pricing.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1527603815363-e79385e0747e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" 
+                         alt="Professional bounce house setup at outdoor party" 
+                         class="rounded-2xl shadow-xl w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bounce House Carousel -->
+    <section id="bounce-houses" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl lg:text-5xl font-bold text-brown-primary mb-6">Our Amazing Bounce Houses</h2>
+                <div class="w-24 h-1 bg-pink-accent mx-auto mb-8"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Choose from our exciting collection of themed bounce houses, each designed to create magical moments and endless fun for your celebration.
+                </p>
+            </div>
+
+            <div class="relative">
+                <button onclick="scrollCarousel('left')" class="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white hover:bg-gray-100 p-3 rounded-full shadow-lg border">
+                    <i data-lucide="chevron-left" class="h-6 w-6 text-gray-600"></i>
+                </button>
+                
+                <div id="carousel-container" class="overflow-x-auto scrollbar-hide">
+                    <div class="flex space-x-6 pb-4" style="width: max-content;">
+                        <!-- Princess Castle -->
+                        <div class="bg-white rounded-2xl shadow-xl overflow-hidden w-80 flex-shrink-0">
+                            <img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=400&h=300&fit=crop&q=80" 
+                                 alt="Princess Castle bounce house" 
+                                 class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <div class="flex items-center justify-between mb-3">
+                                    <span class="bg-pink-accent text-black px-3 py-1 rounded-full text-sm font-medium">Princess</span>
+                                    <div class="flex items-center text-yellow-500">
+                                        <i data-lucide="star" class="h-4 w-4 fill-current"></i>
+                                        <span class="ml-1 text-sm font-medium text-gray-600">5.0</span>
+                                    </div>
+                                </div>
+                                <h3 class="text-xl font-bold text-brown-primary mb-2">Princess Castle</h3>
+                                <p class="text-gray-600 mb-4">A magical princess-themed bounce house perfect for birthday parties</p>
+                                <div class="space-y-2 mb-4">
+                                    <div class="flex items-center text-sm text-gray-600">
+                                        <i data-lucide="check" class="h-4 w-4 text-green-500 mr-2"></i>
+                                        Built-in slide
+                                    </div>
+                                    <div class="flex items-center text-sm text-gray-600">
+                                        <i data-lucide="check" class="h-4 w-4 text-green-500 mr-2"></i>
+                                        Basketball hoop
+                                    </div>
+                                    <div class="flex items-center text-sm text-gray-600">
+                                        <i data-lucide="check" class="h-4 w-4 text-green-500 mr-2"></i>
+                                        Princess decorations
+                                    </div>
+                                </div>
+                                <button onclick="handleBookNow('Princess Castle')" class="w-full bg-black hover-pink-500 text-white px-6 py-3 rounded-xl font-semibold transition duration-300 border-2 border-black hover-border-pink-500">
+                                    Book Now
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Adventure Combo -->
+                        <div class="bg-white rounded-2xl shadow-xl overflow-hidden w-80 flex-shrink-0">
+                            <img src="https://images.unsplash.com/photo-1527603815363-e79385e0747e?w=400&h=300&fit=crop&q=80" 
+                                 alt="Adventure Combo bounce house" 
+                                 class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <div class="flex items-center justify-between mb-3">
+                                    <span class="bg-orange-accent text-black px-3 py-1 rounded-full text-sm font-medium">Adventure</span>
+                                    <div class="flex items-center text-yellow-500">
+                                        <i data-lucide="star" class="h-4 w-4 fill-current"></i>
+                                        <span class="ml-1 text-sm font-medium text-gray-600">5.0</span>
+                                    </div>
+                                </div>
+                                <h3 class="text-xl font-bold text-brown-primary mb-2">Adventure Combo</h3>
+                                <p class="text-gray-600 mb-4">Multi-level bounce house with exciting obstacles and challenges</p>
+                                <div class="space-y-2 mb-4">
+                                    <div class="flex items-center text-sm text-gray-600">
+                                        <i data-lucide="check" class="h-4 w-4 text-green-500 mr-2"></i>
+                                        Multiple slides
+                                    </div>
+                                    <div class="flex items-center text-sm text-gray-600">
+                                        <i data-lucide="check" class="h-4 w-4 text-green-500 mr-2"></i>
+                                        Climbing wall
+                                    </div>
+                                    <div class="flex items-center text-sm text-gray-600">
+                                        <i data-lucide="check" class="h-4 w-4 text-green-500 mr-2"></i>
+                                        Obstacle course
+                                    </div>
+                                </div>
+                                <button onclick="handleBookNow('Adventure Combo')" class="w-full bg-black hover-pink-500 text-white px-6 py-3 rounded-xl font-semibold transition duration-300 border-2 border-black hover-border-pink-500">
+                                    Book Now
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Tropical Paradise -->
+                        <div class="bg-white rounded-2xl shadow-xl overflow-hidden w-80 flex-shrink-0">
+                            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop&q=80" 
+                                 alt="Tropical Paradise bounce house" 
+                                 class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <div class="flex items-center justify-between mb-3">
+                                    <span class="bg-teal-accent text-black px-3 py-1 rounded-full text-sm font-medium">Tropical</span>
+                                    <div class="flex items-center text-yellow-500">
+                                        <i data-lucide="star" class="h-4 w-4 fill-current"></i>
+                                        <span class="ml-1 text-sm font-medium text-gray-600">5.0</span>
+                                    </div>
+                                </div>
+                                <h3 class="text-xl font-bold text-brown-primary mb-2">Tropical Paradise</h3>
+                                <p class="text-gray-600 mb-4">Colorful tropical-themed bounce house with palm tree designs</p>
+                                <div class="space-y-2 mb-4">
+                                    <div class="flex items-center text-sm text-gray-600">
+                                        <i data-lucide="check" class="h-4 w-4 text-green-500 mr-2"></i>
+                                        Water slide option
+                                    </div>
+                                    <div class="flex items-center text-sm text-gray-600">
+                                        <i data-lucide="check" class="h-4 w-4 text-green-500 mr-2"></i>
+                                        Tropical theme
+                                    </div>
+                                    <div class="flex items-center text-sm text-gray-600">
+                                        <i data-lucide="check" class="h-4 w-4 text-green-500 mr-2"></i>
+                                        Large bouncing area
+                                    </div>
+                                </div>
+                                <button onclick="handleBookNow('Tropical Paradise')" class="w-full bg-black hover-pink-500 text-white px-6 py-3 rounded-xl font-semibold transition duration-300 border-2 border-black hover-border-pink-500">
+                                    Book Now
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Superhero Central -->
+                        <div class="bg-white rounded-2xl shadow-xl overflow-hidden w-80 flex-shrink-0">
+                            <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400&h=300&fit=crop&q=80" 
+                                 alt="Superhero Central bounce house" 
+                                 class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <div class="flex items-center justify-between mb-3">
+                                    <span class="bg-pink-accent text-black px-3 py-1 rounded-full text-sm font-medium">Superhero</span>
+                                    <div class="flex items-center text-yellow-500">
+                                        <i data-lucide="star" class="h-4 w-4 fill-current"></i>
+                                        <span class="ml-1 text-sm font-medium text-gray-600">5.0</span>
+                                    </div>
+                                </div>
+                                <h3 class="text-xl font-bold text-brown-primary mb-2">Superhero Central</h3>
+                                <p class="text-gray-600 mb-4">Action-packed superhero themed bounce house for little heroes</p>
+                                <div class="space-y-2 mb-4">
+                                    <div class="flex items-center text-sm text-gray-600">
+                                        <i data-lucide="check" class="h-4 w-4 text-green-500 mr-2"></i>
+                                        Superhero graphics
+                                    </div>
+                                    <div class="flex items-center text-sm text-gray-600">
+                                        <i data-lucide="check" class="h-4 w-4 text-green-500 mr-2"></i>
+                                        Dual slides
+                                    </div>
+                                    <div class="flex items-center text-sm text-gray-600">
+                                        <i data-lucide="check" class="h-4 w-4 text-green-500 mr-2"></i>
+                                        Interactive elements
+                                    </div>
+                                </div>
+                                <button onclick="handleBookNow('Superhero Central')" class="w-full bg-black hover-pink-500 text-white px-6 py-3 rounded-xl font-semibold transition duration-300 border-2 border-black hover-border-pink-500">
+                                    Book Now
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Rainbow Fun House -->
+                        <div class="bg-white rounded-2xl shadow-xl overflow-hidden w-80 flex-shrink-0">
+                            <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=400&h=300&fit=crop&q=80" 
+                                 alt="Rainbow Fun House bounce house" 
+                                 class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <div class="flex items-center justify-between mb-3">
+                                    <span class="bg-orange-accent text-black px-3 py-1 rounded-full text-sm font-medium">Rainbow</span>
+                                    <div class="flex items-center text-yellow-500">
+                                        <i data-lucide="star" class="h-4 w-4 fill-current"></i>
+                                        <span class="ml-1 text-sm font-medium text-gray-600">5.0</span>
+                                    </div>
+                                </div>
+                                <h3 class="text-xl font-bold text-brown-primary mb-2">Rainbow Fun House</h3>
+                                <p class="text-gray-600 mb-4">Bright and colorful rainbow-themed bounce house</p>
+                                <div class="space-y-2 mb-4">
+                                    <div class="flex items-center text-sm text-gray-600">
+                                        <i data-lucide="check" class="h-4 w-4 text-green-500 mr-2"></i>
+                                        Rainbow colors
+                                    </div>
+                                    <div class="flex items-center text-sm text-gray-600">
+                                        <i data-lucide="check" class="h-4 w-4 text-green-500 mr-2"></i>
+                                        Multiple entrances
+                                    </div>
+                                    <div class="flex items-center text-sm text-gray-600">
+                                        <i data-lucide="check" class="h-4 w-4 text-green-500 mr-2"></i>
+                                        Safe netting
+                                    </div>
+                                </div>
+                                <button onclick="handleBookNow('Rainbow Fun House')" class="w-full bg-black hover-pink-500 text-white px-6 py-3 rounded-xl font-semibold transition duration-300 border-2 border-black hover-border-pink-500">
+                                    Book Now
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Medieval Knight Castle -->
+                        <div class="bg-white rounded-2xl shadow-xl overflow-hidden w-80 flex-shrink-0">
+                            <img src="https://images.unsplash.com/photo-1520637836862-4d197d17c90a?w=400&h=300&fit=crop&q=80" 
+                                 alt="Medieval Knight Castle bounce house" 
+                                 class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <div class="flex items-center justify-between mb-3">
+                                    <span class="bg-teal-accent text-black px-3 py-1 rounded-full text-sm font-medium">Medieval</span>
+                                    <div class="flex items-center text-yellow-500">
+                                        <i data-lucide="star" class="h-4 w-4 fill-current"></i>
+                                        <span class="ml-1 text-sm font-medium text-gray-600">5.0</span>
+                                    </div>
+                                </div>
+                                <h3 class="text-xl font-bold text-brown-primary mb-2">Medieval Knight Castle</h3>
+                                <p class="text-gray-600 mb-4">Castle-themed bounce house for medieval adventures</p>
+                                <div class="space-y-2 mb-4">
+                                    <div class="flex items-center text-sm text-gray-600">
+                                        <i data-lucide="check" class="h-4 w-4 text-green-500 mr-2"></i>
+                                        Castle turrets
+                                    </div>
+                                    <div class="flex items-center text-sm text-gray-600">
+                                        <i data-lucide="check" class="h-4 w-4 text-green-500 mr-2"></i>
+                                        Knight theme
+                                    </div>
+                                    <div class="flex items-center text-sm text-gray-600">
+                                        <i data-lucide="check" class="h-4 w-4 text-green-500 mr-2"></i>
+                                        Drawbridge entrance
+                                    </div>
+                                </div>
+                                <button onclick="handleBookNow('Medieval Knight Castle')" class="w-full bg-black hover-pink-500 text-white px-6 py-3 rounded-xl font-semibold transition duration-300 border-2 border-black hover-border-pink-500">
+                                    Book Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button onclick="scrollCarousel('right')" class="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white hover:bg-gray-100 p-3 rounded-full shadow-lg border">
+                    <i data-lucide="chevron-right" class="h-6 w-6 text-gray-600"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl lg:text-5xl font-bold text-brown-primary mb-6">Our Services</h2>
+                <div class="w-24 h-1 bg-pink-accent mx-auto mb-8"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    We provide comprehensive party rental services to make your celebration stress-free and memorable.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Bounce House Rentals -->
+                <div class="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition duration-300">
+                    <div class="bg-pink-accent text-black rounded-full p-4 w-16 h-16 flex items-center justify-center mb-6">
+                        <i data-lucide="castle" class="h-8 w-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brown-primary mb-4">Bounce House Rentals</h3>
+                    <p class="text-gray-600 mb-4">Choose from our amazing collection of themed bounce houses perfect for any celebration.</p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center">
+                            <i data-lucide="check" class="h-4 w-4 text-green-500 mr-2"></i>
+                            Multiple themes available
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check" class="h-4 w-4 text-green-500 mr-2"></i>
+                            Professional setup included
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check" class="h-4 w-4 text-green-500 mr-2"></i>
+                            Safety equipment provided
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Party Equipment -->
+                <div class="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition duration-300">
+                    <div class="bg-teal-accent text-black rounded-full p-4 w-16 h-16 flex items-center justify-center mb-6">
+                        <i data-lucide="music" class="h-8 w-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brown-primary mb-4">Party Equipment</h3>
+                    <p class="text-gray-600 mb-4">Complete your party with our additional equipment rentals and accessories.</p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center">
+                            <i data-lucide="check" class="h-4 w-4 text-green-500 mr-2"></i>
+                            Tables and chairs
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check" class="h-4 w-4 text-green-500 mr-2"></i>
+                            Sound systems
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check" class="h-4 w-4 text-green-500 mr-2"></i>
+                            Party decorations
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Delivery & Setup -->
+                <div class="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition duration-300">
+                    <div class="bg-orange-accent text-black rounded-full p-4 w-16 h-16 flex items-center justify-center mb-6">
+                        <i data-lucide="truck" class="h-8 w-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brown-primary mb-4">Delivery & Setup</h3>
+                    <p class="text-gray-600 mb-4">Professional delivery, setup, and pickup service included with every rental.</p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center">
+                            <i data-lucide="check" class="h-4 w-4 text-green-500 mr-2"></i>
+                            Free delivery in Sun City Center
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check" class="h-4 w-4 text-green-500 mr-2"></i>
+                            Professional setup
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check" class="h-4 w-4 text-green-500 mr-2"></i>
+                            Timely pickup service
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl lg:text-5xl font-bold text-brown-primary mb-6">What Our Customers Say</h2>
+                <div class="w-24 h-1 bg-pink-accent mx-auto mb-8"></div>
+                <div class="flex items-center justify-center space-x-2 mb-4">
+                    <div class="flex items-center text-yellow-500">
+                        <i data-lucide="star" class="h-8 w-8 fill-current"></i>
+                        <i data-lucide="star" class="h-8 w-8 fill-current"></i>
+                        <i data-lucide="star" class="h-8 w-8 fill-current"></i>
+                        <i data-lucide="star" class="h-8 w-8 fill-current"></i>
+                        <i data-lucide="star" class="h-8 w-8 fill-current"></i>
+                    </div>
+                    <span class="text-3xl font-bold text-brown-primary ml-2">5.0</span>
+                </div>
+                <p class="text-lg text-gray-600">Based on 11 Google reviews</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div class="bg-gray-50 rounded-2xl p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="flex items-center text-yellow-500">
+                            <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+                            <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+                            <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+                            <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+                            <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Amazing service! The bounce house was clean and the kids had a blast. Highly recommend Modern Brown Bouncies for any party!"</p>
+                    <div class="flex items-center">
+                        <div class="bg-pink-accent rounded-full w-10 h-10 flex items-center justify-center">
+                            <span class="font-bold text-black">S</span>
+                        </div>
+                        <div class="ml-3">
+                            <p class="font-semibold text-brown-primary">Sarah M.</p>
+                            <p class="text-sm text-gray-600">Local Parent</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-gray-50 rounded-2xl p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="flex items-center text-yellow-500">
+                            <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+                            <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+                            <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+                            <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+                            <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Professional setup and pickup. The Princess Castle was perfect for my daughter's birthday. Will definitely use again!"</p>
+                    <div class="flex items-center">
+                        <div class="bg-teal-accent rounded-full w-10 h-10 flex items-center justify-center">
+                            <span class="font-bold text-black">M</span>
+                        </div>
+                        <div class="ml-3">
+                            <p class="font-semibold text-brown-primary">Maria G.</p>
+                            <p class="text-sm text-gray-600">Happy Customer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-gray-50 rounded-2xl p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="flex items-center text-yellow-500">
+                            <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+                            <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+                            <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+                            <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+                            <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Great communication and fair pricing. The bounce house was delivered on time and the kids loved it. Five stars!"</p>
+                    <div class="flex items-center">
+                        <div class="bg-orange-accent rounded-full w-10 h-10 flex items-center justify-center">
+                            <span class="font-bold text-black">J</span>
+                        </div>
+                        <div class="ml-3">
+                            <p class="font-semibold text-brown-primary">John D.</p>
+                            <p class="text-sm text-gray-600">Event Organizer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="https://g.page/r/YOUR_GOOGLE_BUSINESS_ID/review" target="_blank" rel="noopener" class="inline-flex items-center bg-black hover-pink-500 text-white px-8 py-4 rounded-xl font-semibold text-lg transition duration-300 shadow-lg border-2 border-black hover-border-pink-500">
+                    <i data-lucide="external-link" class="mr-2 h-5 w-5"></i>
+                    Read More Reviews on Google
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl lg:text-5xl font-bold text-brown-primary mb-6">Find Us in Sun City Center</h2>
+                <div class="w-24 h-1 bg-pink-accent mx-auto mb-8"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Proudly serving Sun City Center, FL and surrounding areas with premier party rental services.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="bg-white rounded-2xl p-8 shadow-xl">
+                    <h3 class="text-2xl font-bold text-brown-primary mb-6">Service Area</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-pink-accent text-black rounded-full p-3 flex-shrink-0">
+                                <i data-lucide="map-pin" class="h-6 w-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg text-brown-primary">Primary Service Area</h4>
+                                <p class="text-gray-600">Sun City Center, FL and surrounding communities within 15 miles.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-teal-accent text-black rounded-full p-3 flex-shrink-0">
+                                <i data-lucide="truck" class="h-6 w-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg text-brown-primary">Free Delivery</h4>
+                                <p class="text-gray-600">Complimentary delivery and setup within our primary service area.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-orange-accent text-black rounded-full p-3 flex-shrink-0">
+                                <i data-lucide="phone" class="h-6 w-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg text-brown-primary">Contact Us</h4>
+                                <p class="text-gray-600">Call us to check availability for your specific location.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8">
+                        <a href="tel:+19545591002" class="w-full bg-black hover-pink-500 text-white px-8 py-4 rounded-xl font-semibold text-lg transition duration-300 shadow-lg text-center border-2 border-black hover-border-pink-500 block">
+                            <i data-lucide="phone" class="inline mr-2 h-5 w-5"></i>
+                            Call (954) 559-1002
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-2xl overflow-hidden shadow-xl">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28539.96273799842!2d-82.38396285!3d27.715826349999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2e1e50b0e7f85%3A0x8b6b5e8e0e5b5e8e!2sSun%20City%20Center%2C%20FL!5e0!3m2!1sen!2sus!4v1234567890123" 
+                            width="100%" 
+                            height="400" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Sun City Center, FL - Modern Brown Bouncies Service Area">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gradient-to-b from-pink-light to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl lg:text-5xl font-bold text-brown-primary mb-6">Book Your Party Today</h2>
+                <div class="w-24 h-1 bg-pink-accent mx-auto mb-8"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Ready to make your celebration unforgettable? Contact us for availability and pricing. Remember, first-time rentals get 10% off!
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Contact Information -->
+                <div class="space-y-8">
+                    <div class="bg-white rounded-2xl p-8 shadow-xl">
+                        <h3 class="text-2xl font-bold text-brown-primary mb-6">Get in Touch</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-center">
+                                <div class="bg-pink-accent text-black rounded-full p-3 flex-shrink-0">
+                                    <i data-lucide="phone" class="h-6 w-6"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <div class="font-semibold text-brown-primary">Phone</div>
+                                    <a href="tel:+19545591002" class="text-gray-600 hover:text-brown-primary">(954) 559-1002</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <div class="bg-pink-accent text-black rounded-full p-3 flex-shrink-0">
+                                    <i data-lucide="map-pin" class="h-6 w-6"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <div class="font-semibold text-brown-primary">Address</div>
+                                    <div class="text-gray-600">Sun City Center, FL</div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <div class="bg-teal-accent text-black rounded-full p-3 flex-shrink-0">
+                                    <i data-lucide="clock" class="h-6 w-6"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <div class="font-semibold text-brown-primary">Hours</div>
+                                    <div class="text-gray-600">Flexible scheduling available</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="bg-white rounded-2xl p-8 shadow-xl">
+                    <h3 class="text-2xl font-bold text-brown-primary mb-6">Request a Quote</h3>
+                    
+                    <form id="contact-form" class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <label for="firstName" class="block text-sm font-medium text-gray-700 mb-2">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-pink-500 focus:border-transparent">
+                            </div>
+                            <div>
+                                <label for="lastName" class="block text-sm font-medium text-gray-700 mb-2">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-pink-500 focus:border-transparent">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email *</label>
+                            <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-pink-500 focus:border-transparent">
+                        </div>
+
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-pink-500 focus:border-transparent">
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <label for="eventDate" class="block text-sm font-medium text-gray-700 mb-2">Event Date *</label>
+                                <input type="date" id="eventDate" name="eventDate" required class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-pink-500 focus:border-transparent">
+                            </div>
+                            <div>
+                                <label for="eventType" class="block text-sm font-medium text-gray-700 mb-2">Event Type</label>
+                                <select id="eventType" name="eventType" class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-pink-500 focus:border-transparent">
+                                    <option value="">Select an option</option>
+                                    <option value="birthday">Birthday Party</option>
+                                    <option value="school">School Event</option>
+                                    <option value="church">Church Event</option>
+                                    <option value="corporate">Corporate Event</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="bounceHouseSelection" class="block text-sm font-medium text-gray-700 mb-2">Bounce House Selection</label>
+                            <select id="bounceHouseSelection" name="bounceHouseSelection" class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-pink-500 focus:border-transparent">
+                                <option value="">Select a bounce house</option>
+                                <option value="Princess Castle">Princess Castle</option>
+                                <option value="Adventure Combo">Adventure Combo</option>
+                                <option value="Tropical Paradise">Tropical Paradise</option>
+                                <option value="Superhero Central">Superhero Central</option>
+                                <option value="Rainbow Fun House">Rainbow Fun House</option>
+                                <option value="Medieval Knight Castle">Medieval Knight Castle</option>
+                                <option value="Not sure">Not sure - need recommendations</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="guests" class="block text-sm font-medium text-gray-700 mb-2">Expected Number of Guests</label>
+                            <select id="guests" name="guests" class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-pink-500 focus:border-transparent">
+                                <option value="">Select range</option>
+                                <option value="1-10">1-10 guests</option>
+                                <option value="11-20">11-20 guests</option>
+                                <option value="21-30">21-30 guests</option>
+                                <option value="31-50">31-50 guests</option>
+                                <option value="50+">50+ guests</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Additional Requirements or Questions</label>
+                            <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-pink-500 focus:border-transparent" placeholder="Tell us about your event, special requirements, or any questions you have..."></textarea>
+                        </div>
+
+                        <div class="flex items-center">
+                            <input type="checkbox" id="firstTime" name="firstTime" class="h-4 w-4 text-pink-500 focus:ring-pink-500 border-gray-300 rounded">
+                            <label for="firstTime" class="ml-2 block text-sm text-gray-700">
+                                This is my first time renting from Modern Brown Bouncies (10% discount applies!)
+                            </label>
+                        </div>
+
+                        <button type="submit" class="w-full bg-black hover-pink-500 text-white px-8 py-4 rounded-xl font-semibold text-lg transition duration-300 shadow-lg border-2 border-black hover-border-pink-500">
+                            <i data-lucide="send" class="inline mr-2 h-5 w-5"></i>
+                            Send Quote Request
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brown-primary text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Modern Brown Bouncies</h3>
+                    <p class="text-gray-300 mb-4">
+                        Premier party rental service in Sun City Center, FL. Making celebrations unforgettable with clean, safe bounce houses and exceptional service.
+                    </p>
+                    <div class="flex items-center text-yellow-500">
+                        <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+                        <span class="ml-2 text-white">5.0 (11 reviews)</span>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><button onclick="scrollToSection('home')" class="text-gray-300 hover:text-white transition duration-300">Home</button></li>
+                        <li><button onclick="scrollToSection('about')" class="text-gray-300 hover:text-white transition duration-300">About</button></li>
+                        <li><button onclick="scrollToSection('bounce-houses')" class="text-gray-300 hover:text-white transition duration-300">Bounce Houses</button></li>
+                        <li><button onclick="scrollToSection('services')" class="text-gray-300 hover:text-white transition duration-300">Services</button></li>
+                        <li><button onclick="scrollToSection('contact')" class="text-gray-300 hover:text-white transition duration-300">Contact</button></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                    <div class="space-y-2">
+                        <p class="text-gray-300">
+                            <i data-lucide="phone" class="inline h-4 w-4 mr-2"></i>
+                            (954) 559-1002
+                        </p>
+                        <p class="text-gray-300">
+                            <i data-lucide="map-pin" class="inline h-4 w-4 mr-2"></i>
+                            Sun City Center, FL
+                        </p>
+                        <p class="text-gray-300">
+                            <i data-lucide="clock" class="inline h-4 w-4 mr-2"></i>
+                            Flexible scheduling available
+                        </p>
+                    </div>
+                    
+                    <div class="mt-6">
+                        <h5 class="font-semibold mb-2">First Time Customers</h5>
+                        <p class="text-sm text-gray-300">Get 10% off your first rental!</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-300">
+                    © 2024 Modern Brown Bouncies. All rights reserved. | Serving Sun City Center, FL and surrounding areas.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuBtn = document.getElementById('mobile-menu-btn');
+            const icon = menuBtn.querySelector('[data-lucide]');
+            
+            mobileMenu.classList.toggle('hidden');
+            
+            if (mobileMenu.classList.contains('hidden')) {
+                icon.setAttribute('data-lucide', 'menu');
+            } else {
+                icon.setAttribute('data-lucide', 'x');
+            }
+            
+            lucide.createIcons();
+        }
+
+        // Smooth scrolling to sections
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                
+                // Close mobile menu if open
+                const mobileMenu = document.getElementById('mobile-menu');
+                if (!mobileMenu.classList.contains('hidden')) {
+                    toggleMobileMenu();
+                }
+            }
+        }
+
+        // Carousel scrolling
+        function scrollCarousel(direction) {
+            const container = document.getElementById('carousel-container');
+            const scrollAmount = 320;
+            const currentScroll = container.scrollLeft;
+            const targetScroll = direction === 'left' 
+                ? currentScroll - scrollAmount 
+                : currentScroll + scrollAmount;
+            
+            container.scrollTo({
+                left: targetScroll,
+                behavior: 'smooth'
+            });
+        }
+
+        // Handle book now buttons
+        function handleBookNow(bounceHouseName) {
+            // Pre-fill the bounce house selection in the contact form
+            const bounceHouseSelect = document.getElementById('bounceHouseSelection');
+            if (bounceHouseSelect) {
+                bounceHouseSelect.value = bounceHouseName;
+            }
+            
+            // Scroll to contact section
+            scrollToSection('contact');
+            
+            // Show a confirmation message
+            setTimeout(() => {
+                alert(`Great choice! The ${bounceHouseName} has been pre-selected in the contact form below. Please fill out the remaining details to request your quote.`);
+            }, 1000);
+        }
+
+        // Contact form submission
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+            
+            // Simple validation
+            if (!data.firstName || !data.lastName || !data.email || !data.phone || !data.eventDate) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+            
+            // Create mailto link with form data
+            const subject = encodeURIComponent('Party Rental Quote Request');
+            const body = encodeURIComponent(`
+Hello Modern Brown Bouncies,
+
+I would like to request a quote for party rental services.
+
+Customer Information:
+- Name: ${data.firstName} ${data.lastName}
+- Email: ${data.email}
+- Phone: ${data.phone}
+
+Event Details:
+- Date: ${data.eventDate}
+- Type: ${data.eventType || 'Not specified'}
+- Expected Guests: ${data.guests || 'Not specified'}
+- Bounce House Selection: ${data.bounceHouseSelection || 'Not specified'}
+- First Time Customer: ${data.firstTime ? 'Yes (10% discount applies!)' : 'No'}
+
+Additional Information:
+${data.message || 'None'}
+
+Please contact me to discuss availability and pricing.
+
+Thank you!
+            `);
+            
+            // Open email client
+            window.location.href = `mailto:info@modernbrownbouncies.com?subject=${subject}&body=${body}`;
+            
+            // Show success message
+            alert('Thank you for your quote request! Your email client should open with a pre-filled message. Please send the email to complete your request. We\'ll get back to you soon!');
+            
+            // Reset form
+            this.reset();
+        });
+
+        // Add some interactive hover effects
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add hover effects to cards
+            const cards = document.querySelectorAll('.shadow-xl');
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-5px)';
+                });
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
